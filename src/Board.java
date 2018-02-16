@@ -1,10 +1,12 @@
+import javax.swing.*;
+import javax.swing.text.EditorKit;
 import java.awt.*;
 
-public class Board {
+public class Board extends JPanel{
 
     Ball ball;
     Paddle paddle;
-    Timer timer;
+    Bricks bricks;
 
     private final int EDGESPACE = 50;
     private final int DECORSIZE = 25;
@@ -16,6 +18,13 @@ public class Board {
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         g.setColor(Color.WHITE);
+
+        if (GAMESTATES.isPlay()){
+
+            ball.paint(g);
+            paddle.paint(g);
+            bricks.paint(g);
+        }
     }
 
     public int getEDGESPACE(){

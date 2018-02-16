@@ -67,7 +67,7 @@ public class GAMESTATES {
         isEnd = false;
     }
 
-    /* METHODS FOR TOGGLING BETWEEN GAMESTATES
+    /* DIFFERENT TOGGLES FOR METHODS THROUGHOUT THE GAME
 
      */
     public static void togglePlay() {

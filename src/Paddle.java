@@ -3,7 +3,7 @@ import java.awt.*;
 public class Paddle {
 
     private int x, y;
-    private final int WIDTH = 20, HEIGHT = 100;
+    private final int WIDTH = 100, HEIGHT = 20;
     Board board;
     Game game;
     Ball ball;
@@ -13,6 +13,19 @@ public class Paddle {
         y = 0;
     }
 
+    public void move(){
+        if(game.isLeftPressed()){
+            if(x > 0){
+                x -= 5;
+            }
+        }
+
+        if(game.isRightPressed()){
+            if (x + WIDTH < board.getWidth()){
+                x += 5;
+            }
+        }
+    }
     public void paint (Graphics g){
         g.fillRect(x, y, WIDTH, HEIGHT);
     }

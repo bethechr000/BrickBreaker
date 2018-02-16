@@ -1,12 +1,10 @@
-public class Game {
-        private Board board;
-        private boolean leftPressed, rightPressed;
+import javax.swing.*;
 
-        public Game(){
+public class Game extends JPanel{
+
+        public Game (){
             //accents in the game
-            setResizable(false);
-            setVisable(true);
-            setFocuable(true);
+
         }
 
 }
