@@ -26,6 +26,15 @@ public class Paddle {
             }
         }
     }
+
+    public Rectangle getBounds(){
+        return new Rectangle(x, y, WIDTH, HEIGHT);
+    }
+
+    public void setPosition(int x, int y){
+        this.x =
+    }
+
     public void paint (Graphics g){
         g.fillRect(x, y, WIDTH, HEIGHT);
     }
