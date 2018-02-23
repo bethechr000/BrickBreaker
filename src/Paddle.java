@@ -32,7 +32,7 @@ public class Paddle {
     }
 
     public void setPosition(int x, int y){
-        this.x =
+
     }
 
     public void paint (Graphics g){
