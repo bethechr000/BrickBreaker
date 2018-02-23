@@ -15,12 +15,6 @@ public class Board extends JPanel{
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         g.setColor(Color.WHITE);
-
-        if (GAMESTATES.isPlay()){
-
-            ball.paint(g);
-            paddle.paint(g);
-        }
     }
 
     private void printSimpleString(String s, int width, int XPos, int YPos, Graphics g2d){
